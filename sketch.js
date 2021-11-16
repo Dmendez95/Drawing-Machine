@@ -1,5 +1,4 @@
-let array = [];
-let backgroundColor = 200;
+let noiseOffset = 0.0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -12,6 +11,8 @@ function setup() {
 function draw() {
 
     background(220, 50, 133, 5);
+
+noiseOffset = noiseOffset + 0.01;
 
     stroke(map(mouseX, 0, 600, 0, 255, true))
     line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);
