@@ -1,3 +1,4 @@
+// random checkerboard
 let array = [];
 let backgroundColor = 230;
 
