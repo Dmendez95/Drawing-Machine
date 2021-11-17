@@ -58,15 +58,15 @@ function mousePressed() {
 
 function drawGrid() {
   numCells = 20;
-fillColor = 255;
-// noStroke();
-strokeWeight(0);
+  fillColor = 255;
+  // noStroke();
+  strokeWeight(0);
 
   for (let i = 0; i <= width; i += width / numCells) {
     for (let j = 0; j <= height; j += height / numCells) {
-      if (fillColor === 255){
+      if (fillColor === 255) {
         fillColor = 200;
-      } else{
+      } else {
         fillColor = 255;
       }
       fill(fillColor);
@@ -76,6 +76,6 @@ strokeWeight(0);
 
   }
 
-strokeWeight(5); 
+  strokeWeight(5);
 
 }
